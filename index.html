@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="main">
+        <div id="header" class="flex space-between">
+            <div class="current-select flex">
+                <div id="Cyear" class="Cyear color-w"><p></p></div>
+                <div id="Cmonth" class="Cmonth color-w"><p></p></div>
+            </div>
+
+            <div class="year_popup none">
+                <div class="content">
+                    <ul cla class="years flex"></ul>
+                </div>
+            </div>
+
+            <div class="month_popup none">
+                <div class="content">
+                    <ul class="months flex">
+                        <li class="color-w" month="0">Jan</li>
+                        <li class="color-w" month="1">Feb</li>
+                        <li class="color-w" month="2">Mar</li>
+                        <li class="color-w" month="3">Apr</li>
+                        <li class="color-w" month="4">May</li>
+                        <li class="color-w" month="5">Jun</li>
+                        <li class="color-w" month="6">Jul</li>
+                        <li class="color-w" month="7">Aug</li>
+                        <li class="color-w" month="8">Sep</li>
+                        <li class="color-w" month="9">Oct</li>
+                        <li class="color-w" month="10">Nov</li>
+                        <li class="color-w" month="11">Dec</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="arrow flex space-between">
+                <div class="prev">
+                    <svg class="fill-w" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"/></svg>
+                </div>
+                <div class="next">
+                    <svg class="fill-w" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="dow">
+                <ul class="flex">
+                    <li class="color-w">Sun</li>
+                    <li class="color-w">Mon</li>
+                    <li class="color-w">Tue</li>
+                    <li class="color-w">Wed</li>
+                    <li class="color-w">Thu</li>
+                    <li class="color-w">Fri</li>
+                    <li class="color-w">Sat</li>
+                </ul>
+            </div>
+            <div class="days">
+                <ul class="flex day"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>

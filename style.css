@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.color-w{
+    color: white;
+}
+
+.color-g{
+    color: grey;
+}
+
+.fill-w{
+    fill: white;
+}
+
+.flex{
+    display: flex;
+}
+
+.space-between{
+    justify-content: space-between;
+}
+
+#main{
+    margin-top: 5vh;
+    width: 30vw;
+    height: 65vh;
+    background-color: rgb(0, 0, 0, 0.7);
+    margin-inline: auto;
+    font-family: "Quicksand", sans-serif;
+}
+
+#header{
+    line-height: 10vh;
+}
+
+.arrow{
+    width: 5vw;
+}
+
+.Cyear, .Cmonth{
+    font-size: 30px;
+}
+
+.Cyear:hover, .Cmonth:hover,
+.next:hover, .prev:hover{
+    cursor: pointer;
+}
+
+.Cyear{
+    padding-right: 1vw;
+}
+
+.next, .prev{
+    width: 20px;
+    height: 20px;
+}
+
+.dow, .current-select, .arrow, .days{
+    padding: 0 1vw 0 1vw;
+}
+
+.years, .months, .days ul, .dow ul{
+    list-style-type: none;
+}
+
+.month_popup{
+    position: fixed;
+    margin-left: 9vw;
+    margin-top: 7vh;
+    z-index: 2;
+}
+
+.year_popup{
+    position: fixed;
+    margin-left: 4.5vw;
+    margin-top: 6.5vh;
+    z-index: 2;
+}
+
+.none{
+    display: none;
+}
+
+.month_popup .content, .year_popup .content{
+    width: 20vw;
+    height: 14.5vw;
+}
+
+.month_popup li, .year_popup li, .days li{
+    text-align: center;
+    width: 5vw;
+    cursor: pointer;
+}
+
+.month_popup li{
+    border: 1px solid rgb(90, 85, 85);
+    background-color: rgb(0, 0, 0);
+}
+
+.month_popup ul, .year_popup ul{
+    list-style-type: none;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.year_popup ul{
+    width: 25vw;
+    max-height: 30vh;
+    overflow-y: scroll;
+    background-size: cover;
+    background-color: rgb(0, 0, 0);
+    padding-left: 2vw;
+}
+
+.days{
+    width: 100%;
+    padding-top: 2vh;
+}
+
+.days ul{
+    flex-wrap: wrap;
+}
+
+.days li, .dow li{
+    text-align: center;
+    width: calc(100%/7);
+}
+
+.days li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 7vh;
+    border: 1px solid rgb(134, 131, 131);
+}
+
+.days li:hover{
+    background-color: rgb(123, 132, 141);
+}
+
+li{
+    position: relative;
+}
+
+.days li:active, .dow li{
+    pointer-events:none;
+}
+
+.today{
+    background: rgb(88, 88, 222);
+}
